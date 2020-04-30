@@ -3,8 +3,8 @@ require 'shotgun'
 
 class Birthday < Sinatra::Base
   get '/' do
-    'Testing infrastructure working!'
-    erb(:index)
+    "testing infrastructure"
+    # erb(:index)
   end
 
   # start the server if ruby file executed directly
