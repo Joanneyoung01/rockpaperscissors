@@ -5,7 +5,7 @@ class Rockpaperscissors < Sinatra::Base
     erb(:index)
   end
 
-  post "/playername" do
+  post "/greeter" do
     @name = params[:name]
     # @new = Birthday_calc.new.birthday?(@date,@month)
     erb(:gamepage)
