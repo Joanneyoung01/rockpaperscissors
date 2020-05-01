@@ -12,8 +12,7 @@ class Birthday < Sinatra::Base
     @name = params[:name]
     @date = params[:date]
     @month = params[:month]
-    
-
+    @new = Birthday_calc.new.birthday?(@date,@month)
     erb(:birthday)
   end
 
