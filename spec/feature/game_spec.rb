@@ -15,13 +15,3 @@ feature "User inputs data" do
   end
 
 end
-
-# feature "User can play the game" do
-#   scenario "User can play game" do
-#     visit("/")
-#     fill_in :struggle, with: "Programming"
-
-#     click_button "Flip table"
-#     expect(page).to have_content "(Programming!!!)> (╯°□°）╯︵ ┻━┻"
-#   end
-# end
