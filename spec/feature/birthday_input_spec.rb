@@ -13,7 +13,7 @@ feature "User inputs data" do
     fill_in('date', with: '12')
     fill_in('month', with: '07')
     click_button("submit")
-    expect(page).to have_content("Jo 12 07")
+    expect(page).to have_content("Jo\n12\n07")
   end
 
 end

@@ -14,3 +14,11 @@ Homepage - Ask for Name, Date, Month, Submit
 
 Outcome - If birthday, wish "Happy birthday"
           "It's your birthday in x days"
+
+
+Birthday calculator = (dd, mm)
+                    @dd pass in the date
+                    @mm  pass in the month
+
+                    Method = Birthday?  
+                    do some logic here

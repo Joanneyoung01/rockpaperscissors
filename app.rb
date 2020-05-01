@@ -7,11 +7,13 @@ class Birthday < Sinatra::Base
     erb(:index)
   end
 
-  post "/birthday" do
+  post "/getdate" do
     p params
     @name = params[:name]
     @date = params[:date]
     @month = params[:month]
+    
+
     erb(:birthday)
   end
 
