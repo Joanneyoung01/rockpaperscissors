@@ -9,11 +9,9 @@ feature "User inputs data" do
 
   scenario "User can input into the fields" do
     visit("/")
-    fill_in('name', with: 'Jo')
-    fill_in('date', with: '12')
-    fill_in('month', with: '07')
+    fill_in('move', with: 'Rock')
     click_button("submit")
-    expect(page).to have_content("Jo\n12\n07")
+    expect(page).to have_content("Your move is Rock")
   end
 
 end

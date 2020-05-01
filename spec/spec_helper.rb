@@ -107,5 +107,5 @@ RSpec.configure do |config|
   require 'rspec'
 
   # tell Capybara about our app class
-  Capybara.app = Birthday
+  Capybara.app = Rockpaperscissors
 end
