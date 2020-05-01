@@ -3,8 +3,16 @@ require 'shotgun'
 
 class Birthday < Sinatra::Base
   get '/' do
-    "testing infrastructure"
-    # erb(:index)
+    p params
+    erb(:index)
+  end
+
+  post "/birthday" do
+    p params
+    @name = params[:name]
+    @date = params[:date]
+    @month = params[:month]
+    erb(:birthday)
   end
 
   # start the server if ruby file executed directly
