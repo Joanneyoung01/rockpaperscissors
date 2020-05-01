@@ -1,5 +1,5 @@
 class Birthday_calc 
 
-  def birthday?
+  def birthday? (dd,mm)
   end
 end
