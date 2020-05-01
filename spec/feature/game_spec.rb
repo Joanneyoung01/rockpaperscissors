@@ -9,9 +9,19 @@ feature "User inputs data" do
 
   scenario "User can input into the fields" do
     visit("/")
-    fill_in('move', with: 'Rock')
+    fill_in('name', with: 'Jo')
     click_button("submit")
-    expect(page).to have_content("Your move is Rock")
+    expect(page).to have_content("Your name is Jo")
   end
 
 end
+
+# feature "User can play the game" do
+#   scenario "User can play game" do
+#     visit("/")
+#     fill_in :struggle, with: "Programming"
+
+#     click_button "Flip table"
+#     expect(page).to have_content "(Programming!!!)> (╯°□°）╯︵ ┻━┻"
+#   end
+# end

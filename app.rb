@@ -5,8 +5,8 @@ class Rockpaperscissors < Sinatra::Base
     erb(:index)
   end
 
-  post "/playermove" do
-    @move = params[:move]
+  post "/playername" do
+    @name = params[:name]
     # @new = Birthday_calc.new.birthday?(@date,@month)
     erb(:gamepage)
   end

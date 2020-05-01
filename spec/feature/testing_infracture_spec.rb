@@ -9,6 +9,6 @@ feature "User inputs data" do
 
   scenario "user can input" do
     visit("/")
-    expect(page).to have_field('move')
+    expect(page).to have_field('name')
   end
 end
