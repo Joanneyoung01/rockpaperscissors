@@ -10,5 +10,10 @@ class Rockpaperscissors < Sinatra::Base
     erb(:gamepage)
   end
 
+  post "/whatmove" do
+    @move = params[:move]
+    erb(:playpage)
+  end
+
   run! if app_file == $0
 end
