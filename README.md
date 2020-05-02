@@ -32,12 +32,12 @@ Forking this repo
 TEST driving development of your app
 
 
-Homepage   |  Enters their name
+Homepage   |  Enters their name 
 
 Greeter    |  Chooses rock, paper or scissors
               Clicks 'submit' button
 
-Game page  | Computer will output a random play
+Game page  | Computer will output a random play 
              Rock > paper
              paper > rock
              scissors > paper 

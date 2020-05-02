@@ -9,9 +9,14 @@ class Game
     else 
       return "scissors"
     end
+    
   end
 
-  # def win?(playermove)
-  #   true
-  # end
+  def win?(playermove)
+    if computer_move == playermove
+      "draw"
+    else
+      "lose"
+    end
+  end
 end

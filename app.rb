@@ -13,7 +13,8 @@ class Rockpaperscissors < Sinatra::Base
 
   post "/whatmove" do
     @move = params[:move]
-    @game = Game.new
+    @game = Game.new(@move)
+    @computermove = Game.new.computer_move
     erb(:playpage)
   end
 
