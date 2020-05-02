@@ -1,14 +1,17 @@
 class Game
 
-  def initialize
-    @moves = ["rock", "paper", "scissors"]
-  end 
-
   def computer_move
-    @moves.sample
+    number = rand(1..3)
+    if number == 1
+      return "rock"
+    elsif number == 2
+      return "paper"
+    else 
+      return "scissors"
+    end
   end
 
-  def win?(playermove)
-    true
-  end
+  # def win?(playermove)
+  #   true
+  # end
 end

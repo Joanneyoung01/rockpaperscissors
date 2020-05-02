@@ -33,9 +33,9 @@ TEST driving development of your app
 
 
 Homepage   |  Enters their name
-              Chooses rock, paper or scissors
+
+Greeter    |  Chooses rock, paper or scissors
               Clicks 'submit' button
-            
 
 Game page  | Computer will output a random play
              Rock > paper
