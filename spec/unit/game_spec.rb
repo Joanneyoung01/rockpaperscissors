@@ -22,23 +22,67 @@ describe Game do
   end
 
   context "Player is Rock" do
-
-    it "should respond to win? with an arguement" do
-      expect(subject).to respond_to(:win?).with(1).argument
+    it "should respond to game method with an arguement" do
+      expect(subject).to respond_to(:gamematch).with(1).argument
     end
-
 
     it "generates result for a draw" do
       allow(subject).to receive(:rand).and_return(1) #computer play is rock
-      expect(subject.win?('rock')).to eq 'draw' # player is rock
+      expect(subject.gamematch('rock')).to eq 'draw' # player is rock
     end
     
     it "generates result for a loss" do
       allow(subject).to receive(:rand).and_return(2) #computer play is paper
-      expect(subject.win?('rock')).to eq 'lose' # player is rock
+      expect(subject.gamematch('rock')).to eq 'lose' # player is rock
     end
 
+    it "generates result for a win" do
+      allow(subject).to receive(:rand).and_return(3) #computer play is scissors
+      expect(subject.gamematch('rock')).to eq 'win' # player is rock
+    end
+  end
 
+
+  context "Player is Paper" do
+    it "should respond to game method with an arguement" do
+      expect(subject).to respond_to(:gamematch).with(1).argument
+    end
+
+    it "generates result for a draw" do
+      allow(subject).to receive(:rand).and_return(2) #computer play is paper
+      expect(subject.gamematch('paper')).to eq 'draw' # player is paper
+    end
+    
+    it "generates result for a loss" do
+      allow(subject).to receive(:rand).and_return(3) #computer play is scissors
+      expect(subject.gamematch('paper')).to eq 'lose' # player is paper
+    end
+
+    it "generates result for a win" do
+      allow(subject).to receive(:rand).and_return(1) #computer play is rock
+      expect(subject.gamematch('paper')).to eq 'win' # player is paper
+    end
+  end
+
+  context "Player is Scissors" do
+    it "should respond to game method with an arguement" do
+      expect(subject).to respond_to(:gamematch).with(1).argument
+    end
+
+    it "generates result for a draw" do
+      allow(subject).to receive(:rand).and_return(3) #computer play is scissors
+      expect(subject.gamematch('scissors')).to eq 'draw' # player is scissors
+    end
+    
+    it "generates result for a loss" do
+      allow(subject).to receive(:rand).and_return(1) #computer play is rock
+      expect(subject.gamematch('scissors')).to eq 'lose' # player is scissors
+    end
+
+    it "generates result for a win" do
+      allow(subject).to receive(:rand).and_return(2) #computer play is paper
+      expect(subject.gamematch('scissors')).to eq 'win' # player is scissors
+    end
   end
 
   

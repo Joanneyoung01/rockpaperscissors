@@ -1,5 +1,11 @@
 class Game
 
+  BEATS = {
+    'rock'     => 'paper',
+    'paper'    => 'scissors',
+    'scissors' => 'rock',
+  }
+
   def computer_move
     number = rand(1..3)
     if number == 1
@@ -12,9 +18,11 @@ class Game
     
   end
 
-  def win?(playermove)
+  def gamematch(playermove)
     if computer_move == playermove
       "draw"
+    elsif playermove == BEATS[computer_move]
+      "win"
     else
       "lose"
     end
