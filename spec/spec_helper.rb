@@ -109,3 +109,4 @@ RSpec.configure do |config|
   # tell Capybara about our app class
   Capybara.app = Rockpaperscissors
 end
+
