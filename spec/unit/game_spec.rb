@@ -16,7 +16,6 @@ describe Game do
   end
 
   it "outputs a computer move: scissors" do
-    #update stubbing
     allow(subject).to receive(:rand).and_return(3)
     expect(subject.computer_move).to eq "scissors"
   end
@@ -84,8 +83,5 @@ describe Game do
       expect(subject.gamematch('scissors')).to eq 'win' # player is scissors
     end
   end
-
-  
-
 
 end
