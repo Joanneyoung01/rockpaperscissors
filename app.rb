@@ -13,7 +13,7 @@ class Rockpaperscissors < Sinatra::Base
 
   post "/whatmove" do
     @move = params[:move]
-    @game = Game.new.gamematch(@move)
+    @game = Game.new.result(@move)
     erb(:playpage)
   end
 
