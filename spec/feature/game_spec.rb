@@ -22,4 +22,4 @@ feature "User inputs data" do
     click_button("submit")
     expect(page).to have_content("Your move is rock")
   end
-end
+end 

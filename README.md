@@ -1,6 +1,6 @@
 This week I thought the challenge went ok - I approached the problem by breaking down the user stories into HTTP request paths for /get and /post methods. 
 
-The set up was a little shakey (i accidentally overrided a previous repo, hence the amount of commits!) but happy with how the challenge went. As it completes the user stories. I would like to look into why in the Game object, in the result method the computer's move (rock, paper or scissors) is not showing on the results page. Other than that, I am happy with the functionality. 
+The set up was a little shakey (i accidentally overrided a previous repo, hence the amount of commits!) but happy with how the challenge went. As it completes the user stories. I would like to look into why in the Game object, in the result method the computer's move (rock, paper or scissors) is not showing on the results page. Other than that, I am happy with the functionality.  
 
 
 ## RPS Challenge ##
